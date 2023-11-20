@@ -1,13 +1,26 @@
-import ParentDashbord from "./ParentDashbord"
-import PersistentDrawerLeft from "./MiniDrawer";
-import MiniDrawer from "./MiniDrawer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ParentDashbord from './ParentDashbord/ParentDashbord'
+
 
 function App() {
   return (
     <>
+      {/* <BrowserRouter>
+        <Routes>
+
+        <Route path="/" element={[<ParentDashbord />]}/>
+        <ParentSideNav/>
     
-    <MiniDrawer/>
-    <ParentDashbord/>
+      </Routes>
+      </BrowserRouter> */}
+       
+       
+       <ParentDashbord/>
+       
+       
+      
+  
+      
     </>
   );
 }

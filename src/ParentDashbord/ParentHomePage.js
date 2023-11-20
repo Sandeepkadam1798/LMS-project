@@ -4,15 +4,16 @@ import { Container, Grid, Paper, Typography } from '@mui/material'
 import styled from 'styled-components';
 
 
-import Subject from "./Images/subjects.svg";
-import Assignment from "./Images/assignment.svg";
+import Subject from "../Images/subjects.svg";
+import Assignment from "../Images/assignment.svg";
 import CountUp from 'react-countup';
+import CircleChart from './CircleChart';
 
-const StudentHomePage = () => {
+const ParentHomePage = () => {
 
     return (
         <>
-            <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
+            <Container maxWidth="lg" sx={{ mt: 2, mb: 4 ,}}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={3} lg={3}>
                         <StyledPaper>
@@ -34,9 +35,13 @@ const StudentHomePage = () => {
                             <Data start={0} end={15} duration={4} />
                             
                         </StyledPaper>
+
+                        
                     </Grid>
+                    <CircleChart/>
                     </Grid>
-            </Container>
+                    
+                    </Container>
         </>
     )
 }
@@ -76,4 +81,4 @@ const Data = styled(CountUp)`
   color: green;
 `;
 
-export default StudentHomePage
+export default ParentHomePage
