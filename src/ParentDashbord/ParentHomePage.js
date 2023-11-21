@@ -18,6 +18,7 @@ const ParentHomePage = () => {
                     <Grid item xs={12} md={3} lg={3}>
                         <StyledPaper>
                             <img src={Subject} alt="Subjects" />
+                            
                             <Title>
                                 Total Subjects
                             </Title>
